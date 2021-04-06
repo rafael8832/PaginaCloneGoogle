@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Clone do Google</title>
+</head>
+
+<style>
+
+/*geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/*header-menu-topo*/
+
+.menu-topo{
+    width: 100vw;
+    height: 54px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-links{
+    margin-right: 30px;
+}
+
+.header-links ul{
+    display: flex;
+}
+
+.header-links ul li a{
+    margin-left: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+.header-links ul li a:hover{
+    text-decoration: underline;
+}
+
+
+.header-menu a img, .header-perfil a img{
+    display:flex;
+    margin-right: 30px;
+    border-radius: 19px;   
+}
+
+.header-menu a img:hover, .header-perfil a img:hover{
+    border:3px solid rgba(60,64,67,0.2);
+}
+
+/*section-geral*/
+
+.geral{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.logo-google{
+    margin-bottom: 26px;
+
+}
+
+.input-pesquisa input{
+    border:  0 none;
+    outline: 0;
+}
+
+.input-pesquisa{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+    background: #fff;
+    border: 1px solid #c0c0c0;
+    border-radius: 26px;
+    padding: 10px 20px;
+}
+
+.input-pesquisa:hover{
+    box-shadow: 0px 0px 6px #c0c0c0;
+}
+
+.botoes-pesquisa{
+    display: flex;
+}
+
+.botoes-pesquisa button{
+    padding: 10px 16px;
+    margin:6px;
+    border: none;
+    border-radius: 6px;
+}
+
+.botoes-pesquisa button a{
+    text-decoration: none;
+    color: #000;
+}
+
+.botoes-pesquisa button:hover{
+    box-shadow: 0px 0px 6px #c0c0c0;
+}
+
+/*footer-rodape*/
+
+.rodape{
+    width: 100vw;
+    height: calc(100vh - 554px);
+    background-color:#f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.linha-1 span{
+    margin-left: 30px;
+}
+
+.linha-1{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #70757a;
+    border-bottom: 1px solid#c0c0c0;
+}
+
+.menu-rodape{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linha-2 ul{
+    display: flex;
+    margin-left: 30px;
+}
+
+.linha-3 ul{
+    display: flex;
+    margin-right: 30px;
+}
+
+.linha-2 ul li a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: #70757a;
+}
+
+.linha-3 ul li a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #70757a;
+}
+
+.rodape a:hover{
+    text-decoration: underline;
+}
+
+</style>
+
+<body>
+
+    <header class="menu-topo">
+
+        <div class="header-links">
+            <nav>
+                <ul>
+                    <li><a href="">Gmail</a> </li>
+                    <li><a href="">Imagens</a> </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-menu">
+            <a href=""><img src="./assets/images/header-menu.jpg" width="36px" height="36px" alt=""/></a>
+        </div>
+
+        <div class="header-perfil">
+            <a href=""><img src="./assets/images/foto-perfil.jpg" width="36px" height="36px" alt=""/></a>
+        </div>
+
+    </header>
+
+    <section class="geral">
+
+        <div class="logo-google"><img src="./assets/images/logo-google.jpg" width="280px" height="90px" alt=""></div>
+
+        <div class="input-pesquisa">
+            <img src="./assets/images/icone-pesquisa.jpg" width="25px" height="25px" alt=""/>
+            <input type="text" size="80px" autofocus/>
+            <img src="./assets/images/icone-teclado.jpg" width="25px" height="25px" alt=""/>
+        </div>
+
+        <div class="botoes-pesquisa">
+            <button><a href="">Pesquisa Google</a></button>
+            <button><a href="">Estou com sorte</a></button>
+        </div>
+
+    </section>
+
+    <footer class="rodape">
+
+        <div class="linha-1"><span>Brasil</span></div>
+
+        <div class="menu-rodape">
+
+            <div class="linha-2">  
+                <nav>
+                    <ul>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Publicidade</a></li>
+                        <li><a href="">Negócios</a></li>
+                        <li><a href="">Como funciona a Pesquisa</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="linha-3">  
+                <nav>
+                    <ul>
+                        <li><a href="">Privacidade</a></li>
+                        <li><a href="">Termos</a></li>
+                        <li><a href="">Configurações</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+    </footer>
+ 
+</body>
+</html>
